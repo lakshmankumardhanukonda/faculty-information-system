@@ -1,0 +1,325 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn=mysqli_connect("localhost","root","","project");
+if (!$conn) {
+
+    die("Connection failed: " . $conn->connect_error);
+} 
+else{
+}
+session_start();
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>welcome to anits</title>
+<!--
+
+Template 2097 Pop
+
+http://www.tooplate.com/view/2097-pop
+
+-->
+    <!-- load CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                       <!-- http://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                               <!-- Templatemo style -->
+
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
+    
+</head>
+
+<body>
+    <div id="tm-bg"></div>
+    <div id="tm-wrap">
+        <div class="tm-main-content">
+            <div class="container tm-site-header-container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                        <div class="tm-site-header">
+                            <h1 class="mb-4">ANIL NEERUKONDA INSTITUTE OF TECHNOLOGY & SCIENCES</h1>
+                            
+                            <p></p>        
+                        </div>                        
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="content">
+                            <div class="grid">
+                                <div class="grid__item" id="home-link">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-home fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">faculty cabin search</span>
+                                            <div class="product__bg"></div>        
+                                        </div>                                    
+                                        <div class="product__description">
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <h2 class="tm-page-title">faculty cabin search</h2>        
+                                                </div>
+                                            </div>                                        
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                	
+					
+
+                                                        <form action="admin.php" method="post">
+                                                        faculty name:<br>
+                                                        <input name="faculty"  type="text" value="" required>
+                                                        <br>
+                                                         <br>
+                                                           <label>department  :<br>
+                                                               <input list="department" name="department"></label>
+                                                              <datalist id="department">
+                                                                <option value="computer science and engineering">
+                                                                <option value="mechanical engineering">
+                                                                <option value="electrical and electronics engineering">
+                                                                <option value="electronics and communication engineering">
+                                                                <option value="information technology">
+                                                                 <option value="civil engineering">
+                                                                 <option value="chemical engineering"> 
+                                                                </datalist>
+                                                           <br>
+                                                             <br>
+                                                         <button type="submit" name="submit" class="btn btn-primary tm-btn-submit">Submit</button>
+                                                        </form> 
+
+                                                       
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                    
+                                                    
+                                                    
+                                                </div>                                        
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__item" id="team-link">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i style="font-size:48px" class="fa">&#xf234;</i>
+                                            <span class="tm-nav-text">faculty specialization</span>
+                                            <div class="product__bg"></div>            
+                                        </div>                                     
+                                        <div class="product__description">
+                                            <div class="p-sm-4 p-2">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">faculty specialization</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row tm-reverse-sm">
+                                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                                        <form action="special.php" method="post">
+                                                        faculty name :<br>
+                                                        <input name="name" type="text" value="" required>
+                                                        <br>
+                                                         <br>
+                                                        department :<br>
+                                                        <input list="department" name="department"></label>
+                                                              <datalist id="department">
+                                                                <option value="computer science and engineering">
+                                                                <option value="mechanical engineering">
+                                                                <option value="electrical and electronics engineering">
+                                                                <option value="electronics and communication engineering">
+                                                                <option value="information technology">
+                                                                 <option value="civil engineering">
+                                                                 <option value="chemical engineering"> 
+                                                                </datalist>
+                                                        <br> 
+                                                         <br>
+                                                         <button type="submit" name="submit1" class="btn btn-primary tm-btn-submit">Submit</button>
+                                                        </form> 
+
+                                                        
+                                                
+                                                               
+                                                    </div>                                                
+                                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i style="font-size:48px" class="fa">&#xf017;</i>
+                                            <span class="tm-nav-text">time table</span>
+                                            <div class="product__bg"></div>             
+                                        </div>                                                                 
+                                        <div class="product__description">
+                                            <div class="p-sm-4 p-2">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">time table</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                       
+                                                    </div>
+                                                </div>
+                                                
+                                                              <form action="tm.php" method="post">
+                                                              <label>department :<br>
+                                                               <input list="department" name="department"></label>
+                                                              <datalist id="department">
+                                                                <option value="computer science and engineering">
+                                                                <option value="mechanical engineering">
+                                                                <option value="electrical and electronics engineering">
+                                                                <option value="electronics and communication engineering">
+                                                                <option value="information technology">
+                                                                 <option value="civil engineering">
+                                                                 <option value="chemical engineering"> 
+                                                                </datalist>
+                                                                <br>
+                                                                  <br>
+
+
+                                                              <label>year :<br>
+                                                              <input list="year" name="year"></label>
+                                                               <datalist id="year">
+                                                                <option value="first year">
+                                                                 <option value="second year">
+                                                                 <option value="third year">
+                                                                  <option value="fourth year">
+    
+                                                                  </datalist>
+                                                                 <br>
+                                                                    <br>
+
+
+
+
+
+                                                          
+                                                          
+                                                          
+                                                         <label>section :<br>
+                                                        <input list="section" name="section"></label>
+                                                         <datalist id="section">
+                                                         <option value="section-A">
+                                                         <option value="section-B">
+                                                         <option value="section-C">
+                                                          <option value="section-D">
+                                                        
+                                                         
+                                                         </datalist>
+                                                        <br>
+                                                        <br>
+                                                          <button type="submit" name="submit2" class="btn btn-primary tm-btn-submit">Submit</button>    
+                                                             
+                                                              </form>
+                                                   
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-users fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">faculty details</span>
+                                            <div class="product__bg"></div>             
+                                        </div>                                                              
+                                        <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">faculty details</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                       
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <form action="facultydetails.php" method="post" class="contact-form">
+                                                            
+                                                               
+                                                        
+                                                        faculty name :<br>
+                                                        <input name="name" type="text" value="" required>
+                                                        <br>
+                                                         <br>
+                                                         <label>department :<br>
+                                                               <input list="department" name="department"></label>
+                                                              <datalist id="department">
+                                                                <option value="computer science and engineering">
+                                                                <option value="mechanical engineering">
+                                                                <option value="electrical and electronics engineering">
+                                                                <option value="electronics and communication engineering">
+                                                                <option value="information technology">
+                                                                 <option value="civil engineering">
+                                                                 <option value="chemical engineering"> 
+                                                                </datalist>
+                                                        <br>
+                                                          <br>
+                                                         <button type="submit" name="submit3" class="btn btn-primary tm-btn-submit">Submit</button>
+                                                        </form> 
+ 
+                                                                  
+                                                              
+                                                                
+                                                                  
+                                                                
+                                                                                                                  
+                                                           
+                                                             
+                                                            
+                                                           
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>                       
+                    </div>
+                </div>                
+            </div>
+           
+        </div> <!-- .tm-main-content -->  
+    </div>
+    <!-- load JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->    
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->  
+    <script src="js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
+    <script src="js/main.js"></script>  
+    <script>      
+
+        
+
+       
+
+    </script>             
+
+</body>
+</html>
+
+
